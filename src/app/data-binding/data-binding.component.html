@@ -1,0 +1,42 @@
+<h2>Interpolation</h2>
+
+<p>{{ nome }} tem {{ idade }} anos</p>
+
+<p>{{ nome }} tem mais de 26 anos?</p>
+<p>{{ idade > 26 ? 'Sim' : 'Não' }}</p>
+
+<p>Quanto é {{ idade }} + {{ maisUm }}?</p>
+<p>{{ idade + maisUm }}</p>
+
+<hr>
+
+<h2>Property Binding</h2>
+<!-- [disabled] indica a propriedade HTML a ser modificada
+"checkedDisabled" indica a propriedade do componente que trará o valor desejado -->
+<button [disabled]="checkedDisabled">Button</button>
+<br>
+
+<img [src]="imgSrc" [alt]="imgTitle" [title]="imgTitle">
+
+<hr>
+
+<h2>Event Binding</h2>
+
+<button (click)="alertaInfo($event)">Evento</button>
+
+<div (mousemove)="mouseMoveTest($event)" style="background: red; width: 300px; height: 300px"></div>
+
+{{ position.x }} - {{ position.y }}
+
+<br><br>
+
+<hr>
+
+<h2>Two-way binding</h2>
+
+<input [(ngModel)]="nome">
+{{ nome }}
+
+<br><br>
+
+<hr>
