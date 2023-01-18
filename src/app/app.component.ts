@@ -12,13 +12,15 @@ import { Component, OnInit } from '@angular/core';
       <hr>
     </app-diretivas-atributos>
 
-    <app-diretivas-atributos>
+    <!-- <app-diretivas-atributos>
       <h1>Eliel Lopes</h1>
       <h3>QSD</h3>
       <hr>
-    </app-diretivas-atributos>
+    </app-diretivas-atributos> -->
 
     <router-outlet></router-outlet>
+
+    <app-diretivas-atributos></app-diretivas-atributos> 
   `
 })
 export class AppComponent implements OnInit {

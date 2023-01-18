@@ -28,5 +28,9 @@ para ser renderizado na posicao em que o ng-content esta declarado -->
 <input [(ngModel)]="nome" type="text">
 <button (click)="salvar()">Salvar</button>
 
+<li *ngFor="let item of list">{{ item.nome | uppercase}}</li>
+
+{{ date | date: 'dd/MM/yyyy' }}
+
 <ng-content select="h3"></ng-content>
 <ng-content select="hr"></ng-content>
