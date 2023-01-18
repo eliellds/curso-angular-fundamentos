@@ -1,18 +1,20 @@
-<!-- <div *ngIf="nome != 'Eliel'">
+<!-- select do ng-content seleciona um elemento do html 
+para ser renderizado na posicao em que o ng-content esta declarado -->
+<ng-content select="h1"></ng-content>
+
+<div *ngIf="nome != 'Eliel'">
     <p [ngClass]="{'active': valor, 'disabled': !valor}">NgClass</p>
     <p [ngStyle]="{'height': altura, 'background': backgroundColor}">NgStyle</p>
 </div>
 
 <hr>
 
-** TRECHO COMENTADO PARA DIMINUIR ELEMENTOS VISUAIS EXIBIDOS DURANTE AS AULAS **
-
 <input [(ngModel)]="nome" type="text">
 <button (click)="salvar()">Salvar</button>
 
 <li *ngFor="let item of list">{{ item.nome }}</li>
 
-<hr> -->
+<hr>
 
 <!-- CRIA UM ATRIBUTO NO HTML LIMPO -->
 <ng-template ngFor let-item [ngForOf]="list">
@@ -25,3 +27,6 @@
 
 <input [(ngModel)]="nome" type="text">
 <button (click)="salvar()">Salvar</button>
+
+<ng-content select="h3"></ng-content>
+<ng-content select="hr"></ng-content>
