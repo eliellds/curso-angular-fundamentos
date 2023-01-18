@@ -18,9 +18,11 @@ import { Component, OnInit } from '@angular/core';
       <hr>
     </app-diretivas-atributos> -->
 
+    <app-diretivas-atributos></app-diretivas-atributos> 
+
+    <app-new-component></app-new-component>
     <router-outlet></router-outlet>
 
-    <app-diretivas-atributos></app-diretivas-atributos> 
   `
 })
 export class AppComponent implements OnInit {
