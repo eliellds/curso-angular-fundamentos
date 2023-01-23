@@ -1,0 +1,6 @@
+<!-- #inputValue (pode ser qualquer nome)
+registra o valor que é inserido no input
+para que possa ser utilizado em outro trecho do codigo
+nesse caso, esta sendo utilizado como parametro para o metodo listAddItem -->
+<input #inputValue>
+<button (click)="listAddItem(inputValue.value)">Add Item</button>
